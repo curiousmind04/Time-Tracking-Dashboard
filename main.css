@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-width: 23.5rem;
+}
+
+body {
+  background: hsl(226, 43%, 10%);
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 23.5rem;
+}
+
+main {
+  width: 23.5rem;
+  margin: 4rem 0 2.5rem 0;
+}
+
+header {
+  background: hsl(235, 46%, 20%);
+  width: 87%;
+  margin: auto;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.header-top {
+  background: hsl(246, 80%, 60%);
+  display: flex;
+  padding: 2rem 1.8rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  height: 4.375rem;
+  width: 4.375rem;
+  margin-right: 1rem;
+}
+
+header img {
+  width: 100%;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 0.2rem;
+  letter-spacing: 0.08rem;
+}
+
+.header-top span {
+  font-size: 0.9rem;
+  color: hsl(236, 100%, 87%);
+}
+
+.header-bottom {
+  padding: 1.5rem 1.8rem 1.5rem 1.8rem;
+}
+
+.header-bottom ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bottom li {
+  color: hsl(235, 45%, 61%);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.header-bottom .weekly {
+  color: #fff;
+}
+
+.container {
+  width: 87%;
+  margin: auto;
+}
+
+.outer-container {
+  overflow: hidden;
+  border-radius: 1rem;
+  padding-top: 2.5rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+}
+
+#work {
+  background: hsl(15, 100%, 70%);
+}
+#play {
+  background: hsl(195, 74%, 62%);
+}
+#study {
+  background: hsl(348, 100%, 68%);
+}
+#exercise {
+  background: hsl(145, 58%, 55%);
+}
+#social {
+  background: hsl(264, 64%, 52%);
+}
+#self-care {
+  background: hsl(43, 84%, 65%);
+}
+
+#work img,
+#social img,
+#self-care img {
+  top: -9px;
+}
+
+.outer-container > img {
+  position: absolute;
+  z-index: 1;
+  top: -3px;
+  right: 19px;
+}
+
+.inner-container {
+  background: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  padding: 1.6rem 1.5rem;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom .current-hrs {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.bottom .previous-hrs {
+  font-size: 0.92rem;
+  color: hsl(236, 100%, 87%);
+}
+
+@media (hover: hover) {
+  .header-bottom li:hover {
+    color: #fff !important;
+  }
+  svg:hover path {
+    fill: #fff;
+  }
+  .inner-container:hover {
+    background: hsl(236, 39%, 34%);
+  }
+}
