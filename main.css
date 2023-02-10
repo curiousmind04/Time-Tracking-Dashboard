@@ -188,3 +188,81 @@ svg {
     background: hsl(236, 39%, 34%);
   }
 }
+
+@media (min-width: 50rem) {
+  main {
+    width: 98%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-bottom: 4rem;
+  }
+  header {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .header-top {
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .image-container {
+    height: 5.2rem;
+    width: 5.2rem;
+    margin-right: 0;
+    margin-bottom: 2.4rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .header-bottom ul {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 6.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1.8rem;
+    justify-items: center;
+  }
+  .outer-container {
+    margin-bottom: 0;
+    padding-top: 3rem;
+    width: 90%;
+  }
+  .inner-container {
+    padding: 1.8rem;
+    height: 100%;
+  }
+  .top {
+    margin-bottom: 1.8rem;
+  }
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bottom .current-hrs {
+    font-size: 2.5rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media (min-width: 67rem) {
+  main {
+    width: 90%;
+    max-width: 70.625rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  .bottom .current-hrs {
+    font-size: 3.4rem;
+  }
+}
